@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Calculator</h1>
+    <table border="1" bgcolor="black" cellspacing="5px" cellpadding="5px">
+        <tr>
+            <td colspan="3" align="center" bgcolor="black"><input type="text" class="textbox" id="res"></td>
+            <td class="tbnd"><button class="btn" id="ACBTN" onclick="AC()">AC</button></td>
+        </tr>
+        <div id="table1">
+        <tr>
+            <td align="center" class="tbnd"><button class="btn" onclick="Show('1')">1</button></td>
+            <td align="center" class="tbnd"><button class="btn" onclick="Show('2')">2</button></td>
+            <td align="center" class="tbnd"><button class="btn" onclick="Show('3')">3</button></td>
+            <td align="center" class="tbnd"><button class="btn" onclick="Show('+')">+</button></td>
+        </tr>
+
+        <tr>
+            <td align="center" class="tbnd"><button class="btn" onclick="Show('4')">4</button></td>
+            <td align="center" class="tbnd"><button class="btn" onclick="Show('5')">5</button></td>
+            <td align="center" class="tbnd"><button class="btn" onclick="Show('6')">6</button></td>
+            <td align="center" class="tbnd"><button class="btn" onclick="Show('-')">-</button></td>
+        </tr>
+
+        <tr>
+            <td align="center" class="tbnd"><button class="btn" onclick="Show('7')">7</button></td>
+            <td align="center" class="tbnd"><button class="btn" onclick="Show('8')">8</button></td>
+            <td align="center" class="tbnd"><button class="btn" onclick="Show('9')">9</button></td>
+            <td align="center" class="tbnd"><button class="btn" onclick="Show('*')">*</button></td>
+        </tr>
+
+        <tr>
+            <td align="center" class="tbnd"><button class="btn" onclick="Show('0')">0</button></td>
+            <td align="center" class="tbnd"><button class="btn" onclick="Show('%')">%</button></td>
+            <td align="center" class="tbnd"><button class="btn" onclick="Show('/')">/</button></td>
+            <td align="center" class="tbnd"><button class="btn" onclick="cal()">=</button></td>
+        </tr>
+    </div>
+    </table>
+
+    <script src="script.js"></script>
+</body>
+</html>
